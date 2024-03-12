@@ -2,7 +2,7 @@ class MergeLinkedLists {
 
     public static void main(String[] args) {
         ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(3, null)));
-        ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(5, null)));
+        ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(6, null)));
         ListNode result = mergeTwoLists(list1, list2);
         System.out.println(result.toString());
     }
