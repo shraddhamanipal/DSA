@@ -1,3 +1,5 @@
+package src.sort;
+
 class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {8,5,9,1,5,3,7, 24,0,-1};

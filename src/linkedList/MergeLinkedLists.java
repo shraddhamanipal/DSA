@@ -1,3 +1,5 @@
+package src.linkedList;
+
 class MergeLinkedLists {
 
     public static void main(String[] args) {
@@ -56,7 +58,7 @@ class ListNode {
 
     @Override
     public String toString() {
-        return "ListNode{" +
+        return "src.linkedList.ListNode{" +
                 "val=" + val +
                 ", next=" + next +
                 '}';

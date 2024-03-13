@@ -1,3 +1,5 @@
+package src.recursion;
+
 class Factorial {
 
     public static void main(String[] args) {
