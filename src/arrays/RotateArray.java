@@ -3,9 +3,9 @@ package src.arrays;
 class RotateArray {
     public static void main(String[] args) {
         int[] nums = {1,2,3,4,5};
-        rotate(nums, 3);
+        rotate(nums, 4);
         for (int i: nums) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
     }
     public static void rotate(int[] nums, int k) {
@@ -32,11 +32,15 @@ class RotateArray {
     }
     private static void reverse(int[] nums, int start, int end) {
         while(start<end) {
-            int temp = nums[start];
-            nums[start] = nums[end];
-            nums[end] = temp;
+            swap(nums, start, end);
             start++;
             end--;
         }
+    }
+
+    private static void swap(int[] nums, int start, int end) {
+        int temp = nums[start];
+        nums[start] = nums[end];
+        nums[end] = temp;
     }
 }
